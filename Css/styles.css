@@ -135,9 +135,6 @@ section {
 .info {
     text-align: center;
 }
-.info a{
-    text-decoration:none;
-}
 .info h3{
     color: #3a6cf4;
     font-size: 1.2em;
@@ -212,6 +209,10 @@ section {
 
 .contact .info p {
     font-size: 1.4em;
+}
+
+.contact .info p>a{
+    text-decoration:none;
 }
 
 .footer {
