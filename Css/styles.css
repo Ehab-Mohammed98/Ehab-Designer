@@ -135,7 +135,7 @@ section {
 .info {
     text-align: center;
 }
-.info{
+.info a{
     text-decoration:none;
 }
 .info h3{
