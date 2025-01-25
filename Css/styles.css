@@ -229,13 +229,10 @@ section {
     color: #3a6cf4;
 }
 
-.footer-title span a{
-    text-decoration: none;
-}
-
 .footer .social-icons a{
     font-size: 1.3em;
     padding: 0 12px 0 0;
+    text-decoration:none;
 }
 
 @media (max-width:1023px){
