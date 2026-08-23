@@ -33,13 +33,16 @@ header{
    color: #3a6cf4;
    padding-left: 30px;  
 }
+
 .navigtion a:hover{
     color: #601cfc;
-    font-size: 1.8em;
+    font-size: 1.8em;   
 }
+
 section {
     padding: 100px 200px;
 }
+
 .main{
     width: 100%;
     min-height: 100vh;
@@ -47,7 +50,7 @@ section {
     align-items: center;
     background-blend-mode: overlay;
     background-size: cover;
-    background-image: url(../images/Desktoop1.jpeg);
+    background-image: url(../image/Desktoop1.jpeg);
     background-color:rgba(0,0,0,40%);
     background-position: center;
     background-attachment: fixed;
@@ -104,6 +107,7 @@ section {
     font-weight: 800;
     margin-bottom: 30px;
 }
+
 
 .content {
     display: flex;
@@ -188,8 +192,35 @@ section {
     text-transform: uppercase;
     font-weight: 800;
     margin-top: 10px;
+
 }
 
+.Project-x{
+    color: #ffffffff;
+    background-color: #0a49f6;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    text-align: center;
+    transition: 0.7s ease;
+}
+.project-btn {
+    color: #fff;
+    background-color: #3a6cf4;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
 .more-details {
     text-decoration: none;
     color: #3a6cf4;
