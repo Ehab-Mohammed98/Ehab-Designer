@@ -1,0 +1,63 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+/* Gallery */
+
+.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+padding:40px;
+
+}
+
+.card{
+
+background:#fff;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+text-align:center;
+
+cursor:pointer;
+
+transition:.4s;
+
+padding:20px;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.card img{
+
+width:220px;
+
+height:220px;
+
+object-fit:contain;
+
+}
+
+.card h3{
+
+margin-top:15px;
+
+font-size:28px;
+
+font-weight:bold;
+
+}
