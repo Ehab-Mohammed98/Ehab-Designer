@@ -167,6 +167,7 @@ section {
             text-decoration: none;
             font-size: 17px;
             cursor: pointer;
+            border-radius: 15px;
         }
 
 .projects {
