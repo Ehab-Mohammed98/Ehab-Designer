@@ -258,8 +258,12 @@ section {
 
 /* عنوان القسم */
 .contact .title {
-    text-align: center;
-    margin-bottom: 40px;
+     display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+
 }
 
 /* حاوية الكروت */
@@ -271,10 +275,6 @@ section {
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
-}
-
-.contact .title{
-    text-aligne:center
 }
 /* الكارد */
 .contact .card {
