@@ -273,8 +273,11 @@ section {
     margin: 0 auto;
 }
 
+.contact .title{
+    text-aligne:center
+}
 /* الكارد */
-#contact .card {
+.contact .card {
     width: 350px;
     min-height: 230px;
 
