@@ -213,6 +213,20 @@ header {
     gap: 30px;
 }
 
+.services .content {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
 .services .card {
     background: #fff;
 
