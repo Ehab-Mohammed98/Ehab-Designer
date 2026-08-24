@@ -259,19 +259,19 @@ section {
 }
 
 /* القسم بالكامل */
-#contact {
+.contact {
     text-align: center;
     padding: 80px 20px;
 }
 
 /* عنوان القسم */
-#contact .title {
+.contact .title {
     text-align: center;
     margin-bottom: 40px;
 }
 
 /* حاوية الكروت */
-#contact .content {
+.contact .content {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -304,37 +304,37 @@ section {
 }
 
 /* حركة عند مرور الماوس */
-#contact .card:hover {
+.contact .card:hover {
     transform: translateY(-8px);
 }
 
 /* الأيقونة */
-#contact .icon {
+.contact .icon {
     font-size: 45px;
     margin-bottom: 15px;
     color: #3f6df6;
 }
 
 /* العنوان داخل الكارد */
-#contact .info h3 {
+.contact .info h3 {
     margin: 0 0 15px;
     font-size: 22px;
 }
 
 /* النص */
-#contact .info p {
+.contact .info p {
     margin: 8px 0;
 }
 
 /* الروابط */
-#contact .info a {
+.contact .info a {
     color: #333;
     text-decoration: none;
     font-size: 16px;
     transition: 0.3s;
 }
 
-#contact .info a:hover {
+.contact .info a:hover {
     color: #3f6df6;
 }
 
