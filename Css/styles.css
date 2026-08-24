@@ -258,23 +258,89 @@ section {
     color: #601cfc;
 }
 
-.contact .icon{
-    font-size: 4.5em;
+/* القسم بالكامل */
+#contact {
+    text-align: center;
+    padding: 80px 20px;
 }
 
-.contact .info h3 {
-    color: #000;
+/* عنوان القسم */
+#contact .title {
+    text-align: center;
+    margin-bottom: 40px;
 }
 
-.contact .info p {
-    font-size: 1.4em;
+/* حاوية الكروت */
+#contact .content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-.contact .info p>a{
-    text-decoration:none;
+/* الكارد */
+#contact .card {
+    width: 350px;
+    min-height: 230px;
+
+    background: #fff;
+    border-radius: 15px;
+
+    padding: 30px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s ease;
 }
 
-.footer {
+/* حركة عند مرور الماوس */
+#contact .card:hover {
+    transform: translateY(-8px);
+}
+
+/* الأيقونة */
+#contact .icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+    color: #3f6df6;
+}
+
+/* العنوان داخل الكارد */
+#contact .info h3 {
+    margin: 0 0 15px;
+    font-size: 22px;
+}
+
+/* النص */
+#contact .info p {
+    margin: 8px 0;
+}
+
+/* الروابط */
+#contact .info a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#contact .info a:hover {
+    color: #3f6df6;
+}
+
+
+
+.footer{
     background-color: #000016;
     color: #fff;
     padding: 2em;
@@ -361,3 +427,17 @@ section {
     }
 
 }
+/* الجوال */
+@media (max-width: 700px) {
+
+    #contact .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #contact .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
