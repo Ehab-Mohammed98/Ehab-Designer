@@ -1,105 +1,542 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مصمم جرافيك | Portfolio</title>
 
-    <script src="https://kit.fontawesome.com/62edd5cf92.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Css/styles.css">
-    <title>Ehab Design | Graphic Design Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f7f7f7;
+            color: #222;
+        }
+
+        /* NAVBAR */
+        header {
+            width: 100%;
+            background: #111;
+            padding: 20px 8%;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #aaa;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 120px 20px 60px;
+            background: linear-gradient(135deg, #111, #333);
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #aaa;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 2;
+            color: #ddd;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            background: white;
+            color: #111;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 90px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #777;
+        }
+
+        /* ABOUT */
+        .about {
+            max-width: 900px;
+            margin: auto;
+            text-align: center;
+            font-size: 19px;
+            line-height: 2.2;
+            color: #555;
+        }
+
+        /* SERVICES */
+        .services-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .service {
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+            transition: 0.3s;
+        }
+
+        .service:hover {
+            transform: translateY(-8px);
+        }
+
+        .service-icon {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .service h3 {
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .service p {
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* HIDDEN SERVICES */
+        .extra-services {
+            display: none;
+            margin-top: 25px;
+        }
+
+        .extra-services.show {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .more-btn {
+            display: block;
+            margin: 40px auto 0;
+            padding: 13px 30px;
+            border: none;
+            background: #111;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* PORTFOLIO */
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .portfolio-item {
+            height: 280px;
+            background: #ddd;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: #111;
+            color: white;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 15px 0;
+            color: #ccc;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #080808;
+            color: #777;
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* MOBILE */
+        @media(max-width: 900px) {
+
+            .services-container,
+            .extra-services.show,
+            .portfolio {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+        }
+
+        @media(max-width: 600px) {
+
+            nav ul {
+                display: none;
+            }
+
+            .services-container,
+            .extra-services.show,
+            .portfolio {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 35px;
+            }
+
+            .hero p {
+                font-size: 17px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- Header -->
 <header>
-    <a href="#" class="logo">Ehab Design</a>
+    <nav>
+        <div class="logo">OZAAN DESIGN</div>
 
-    <nav class="navigation">
-        <a href="index.html">Services</a>
-        <a href="#project">Projects</a>
-        <a href="#contact">Contact</a>
+        <ul>
+            <li><a href="#about">من أنا</a></li>
+            <li><a href="#services">الخدمات</a></li>
+            <li><a href="#portfolio">أعمالي</a></li>
+            <li><a href="#contact">تواصل معي</a></li>
+        </ul>
     </nav>
 </header>
 
 
-<!-- Projects Section -->
-<section class="projects" id="project">
+<!-- HERO -->
+<section class="hero">
 
-    <h2 class="title">My Projects</h2>
+    <div class="hero-content">
 
-    <div class="content">
+        <h1>
+            مصمم <span>جرافيك</span>
+        </h1>
 
-        <!-- Project 1 -->
-        <div class="project-card">
-                <div class="project-image">
-                <img src="images/logo.png" alt="Graphic Design Project">
-                </div>
+        <p>
+            أحوّل الأفكار إلى تصاميم بصرية مميزة تجمع بين الإبداع،
+            البساطة والهوية الاحترافية.
+        </p>
 
-            <div class="project-info">
-                <p class="project-category">
-                    Logo Design
-                </p>
+        <a href="#portfolio" class="btn">
+            شاهد أعمالي
+        </a>
 
-                <strong class="project-title">
-                    <span>Advertising Design</span>
-
-                    <a href="View.html" class="more-details">
-                        View Project
-                    </a>
-                </strong>
-            </div>
-                 <--2-->
-             <div class="project-card">
-                <div class="project-image">
-                <img src="images/logo.png" alt="Graphic Design Project">
-                </div>
-
-            <div class="project-info">
-                <p class="project-category">
-                    Branding Design
-                </p>
-
-                <strong class="project-title">
-                    <span>Advertising Design</span>
-
-                    <a href="View.html" class="more-details">
-                        View Project
-                    </a>
-                </strong>
-            </div>
-            <--3-->
-            
-        </div>
-
-        </div>
     </div>
 
 </section>
 
 
-<!-- Contact -->
-<section class="contact" id="contact">
+<!-- ABOUT -->
+<section id="about">
 
-    <h2 class="title">Let's Work Together</h2>
+    <div class="section-title">
+        <h2>من أنا؟</h2>
+        <p>تعرف أكثر على خبرتي وطريقة عملي</p>
+    </div>
 
-    <p>
-        Have a project in mind? Let's create something creative and unique together.
-    </p>
+    <div class="about">
 
-    <a href="mailto:your@email.com" class="contact-button">
-        Contact Me
-    </a>
+        <p>
+            أنا مصمم جرافيك متخصص في إنشاء التصاميم البصرية والهويات
+            التجارية التي تساعد المشاريع والأفراد على الظهور بصورة
+            احترافية ومميزة. أعمل على تحويل الأفكار إلى تصاميم واضحة
+            وجذابة تراعي الهوية البصرية وتفاصيل الجمهور المستهدف.
+            أقدم حلولاً تصميمية متنوعة تشمل الهويات التجارية،
+            الإعلانات، وسائل التواصل الاجتماعي، المطبوعات وتصاميم
+            المناسبات، مع الاهتمام بالدقة وجودة التنفيذ وتجربة العميل.
+        </p>
+
+    </div>
 
 </section>
 
 
-<!-- Footer -->
-<footer>
+<!-- SERVICES -->
+<section id="services">
+
+    <div class="section-title">
+        <h2>خدماتي</h2>
+        <p>مجموعة من الخدمات التصميمية التي أقدمها</p>
+    </div>
+
+    <div class="services-container">
+
+        <div class="service">
+            <div class="service-icon">🎨</div>
+            <h3>تصميم الهوية البصرية</h3>
+            <p>
+                تصميم هوية متكاملة تعكس شخصية العلامة التجارية.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">📱</div>
+            <h3>تصاميم السوشيال ميديا</h3>
+            <p>
+                تصاميم إبداعية لمنصات التواصل الاجتماعي.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">📢</div>
+            <h3>التصاميم الإعلانية</h3>
+            <p>
+                تصميم إعلانات وبوسترات بطريقة جذابة واحترافية.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- الخدمات الإضافية -->
+
+    <div class="extra-services" id="extraServices">
+
+        <div class="service">
+            <div class="service-icon">🖨️</div>
+            <h3>تصاميم الطباعة</h3>
+            <p>
+                بروشورات، فلايرات، كروت شخصية، منيوهات ومطبوعات.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">🏆</div>
+            <h3>الدروع والشهادات</h3>
+            <p>
+                تصميم الدروع والشهادات والتكريمات بأسلوب أنيق.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">🖥️</div>
+            <h3>تصميم واجهات المواقع</h3>
+            <p>
+                تصميم واجهات مواقع عصرية وسهلة الاستخدام.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">🎯</div>
+            <h3>تصميم الشعارات</h3>
+            <p>
+                تصميم شعارات احترافية ومميزة للعلامات التجارية.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">🎁</div>
+            <h3>تصاميم المناسبات</h3>
+            <p>
+                دعوات، حفلات، تخرج، زواج ومناسبات مختلفة.
+            </p>
+        </div>
+
+        <div class="service">
+            <div class="service-icon">📋</div>
+            <h3>تصاميم الشركات</h3>
+            <p>
+                عروض تقديمية، ملفات تعريفية ونماذج الأعمال.
+            </p>
+        </div>
+
+    </div>
+
+
+    <button class="more-btn" onclick="showServices()" id="moreBtn">
+        عرض المزيد من الخدمات
+    </button>
+
+</section>
+
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+
+    <div class="section-title">
+        <h2>أعمالي</h2>
+        <p>نماذج من أعمالي في التصميم</p>
+    </div>
+
+    <div class="portfolio">
+
+        <div class="portfolio-item">
+            <img src="images/design1.jpg" alt="تصميم">
+        </div>
+
+        <div class="portfolio-item">
+            <img src="images/design2.jpg" alt="تصميم">
+        </div>
+
+        <div class="portfolio-item">
+            <img src="images/design3.jpg" alt="تصميم">
+        </div>
+
+        <div class="portfolio-item">
+            <img src="images/design4.jpg" alt="تصميم">
+        </div>
+
+        <div class="portfolio-item">
+            <img src="images/design5.jpg" alt="تصميم">
+        </div>
+
+        <div class="portfolio-item">
+            <img src="images/design6.jpg" alt="تصميم">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+
+    <div class="section-title">
+        <h2>تواصل معي</h2>
+        <p>هل لديك مشروع؟ دعنا نحوله إلى تصميم مميز.</p>
+    </div>
+
     <p>
-        © 2026 <strong>Ehab Design</strong>. All Rights Reserved.
+        البريد الإلكتروني:
+        <a href="mailto:example@email.com">
+            example@email.com
+        </a>
     </p>
+
+    <p>
+        واتساب:
+        <a href="#">
+            تواصل معي
+        </a>
+    </p>
+
+</section>
+
+
+<footer>
+    © 2026 جميع الحقوق محفوظة - OZAAN DESIGN
 </footer>
+
+
+<script>
+
+function showServices() {
+
+    const extraServices =
+        document.getElementById("extraServices");
+
+    const button =
+        document.getElementById("moreBtn");
+
+    if (extraServices.classList.contains("show")) {
+
+        extraServices.classList.remove("show");
+
+        button.innerText =
+            "عرض المزيد من الخدمات";
+
+    } else {
+
+        extraServices.classList.add("show");
+
+        button.innerText =
+            "إخفاء الخدمات";
+
+    }
+}
+
+</script>
 
 </body>
 </html>
