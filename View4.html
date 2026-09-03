@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>أعمالي | رول أب واستيكر</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="container nav">
+
+            <a href="#" class="logo">
+                Ehab<span>Design</span>
+            </a>
+
+            <nav>
+                <a href="#home">الرئيسية</a>
+                <a href="#rollup">الرول أب</a>
+                <a href="#sticker">الاستيكر</a>
+                <a href="#contact">تواصل معي</a>
+            </nav>
+
+            <a href="#contact" class="nav-btn">
+                اطلب تصميم
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="small-title">
+                Graphic Design Portfolio
+            </span>
+
+            <h1>
+                أعمالي في تصميم
+                <span>الرول أب والاستيكر</span>
+            </h1>
+
+            <p>
+                مجموعة من أعمال التصميم الإبداعية والمخصصة للطباعة،
+                بتصاميم عصرية تجمع بين الاحترافية والجاذبية البصرية.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#portfolio" class="primary-btn">
+                    مشاهدة الأعمال
+                </a>
+
+                <a href="#contact" class="secondary-btn">
+                    تواصل معي
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section class="portfolio" id="portfolio">
+
+        <div class="section-title">
+
+            <span>MY WORK</span>
+
+            <h2>
+                أحدث أعمالي
+            </h2>
+
+            <p>
+                تصاميم رول أب واستيكر جاهزة للطباعة والاستخدام التجاري.
+            </p>
+
+        </div>
+
+
+        <!-- FILTER -->
+        <div class="filters">
+
+            <button class="filter-btn active" data-filter="all">
+                الكل
+            </button>
+
+            <button class="filter-btn" data-filter="rollup">
+                رول أب
+            </button>
+
+            <button class="filter-btn" data-filter="sticker">
+                استيكر
+            </button>
+
+        </div>
+
+
+        <!-- ================= GALLERY ================= -->
+        <div class="gallery" id="gallery">
+
+
+            <!-- ROLL UP 01 -->
+            <div class="work-card" data-category="rollup">
+
+                <div class="work-image">
+
+                    <img
+                        src="images/rollup-01.jpg"
+                        alt="تصميم رول أب"
+                    >
+
+                    <div class="overlay">
+
+                        <button
+                            class="view-btn"
+                            onclick="openImage(this)"
+                        >
+                            عرض التصميم
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+                        <span>ROLL UP</span>
+                        <h3>تصميم رول أب احترافي</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ROLL UP 02 -->
+            <div class="work-card" data-category="rollup">
+
+                <div class="work-image">
+
+                    <img
+                        src="images/rollup-02.jpg"
+                        alt="تصميم رول أب"
+                    >
+
+                    <div class="overlay">
+
+                        <button
+                            class="view-btn"
+                            onclick="openImage(this)"
+                        >
+                            عرض التصميم
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+                        <span>ROLL UP</span>
+                        <h3>تصميم رول أب تجاري</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ROLL UP 03 -->
+            <div class="work-card" data-category="rollup">
+
+                <div class="work-image">
+
+                    <img
+                        src="images/rollup-03.jpg"
+                        alt="تصميم رول أب"
+                    >
+
+                    <div class="overlay">
+
+                        <button
+                            class="view-btn"
+                            onclick="openImage(this)"
+                        >
+                            عرض التصميم
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+                        <span>ROLL UP</span>
+                        <h3>تصميم رول أب إعلاني</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- STICKER 01 -->
+            <div class="work-card" data-category="sticker">
+
+                <div class="work-image">
+
+                    <img
+                        src="images/sticker-01.jpg"
+                        alt="تصميم استيكر"
+                    >
+
+                    <div class="overlay">
+
+                        <button
+                            class="view-btn"
+                            onclick="openImage(this)"
+                        >
+                            عرض التصميم
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+                        <span>STICKER</span>
+                        <h3>تصميم استيكر</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- STICKER 02 -->
+            <div class="work-card" data-category="sticker">
+
+                <div class="work-image">
+
+                    <img
+                        src="images/sticker-02.jpg"
+                        alt="تصميم استيكر"
+                    >
+
+                    <div class="overlay">
+
+                        <button
+                            class="view-btn"
+                            onclick="openImage(this)"
+                        >
+                            عرض التصميم
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+                        <span>STICKER</span>
+                        <h3>استيكر تجاري</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- STICKER 03 -->
+            <div class="work-card" data-category="sticker">
+
+                <div class="work-image">
+
+                    <img
+                        src="images/sticker-03.jpg"
+                        alt="تصميم استيكر"
+                    >
+
+                    <div class="overlay">
+
+                        <button
+                            class="view-btn"
+                            onclick="openImage(this)"
+                        >
+                            عرض التصميم
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div class="work-info">
+
+                    <div>
+                        <span>STICKER</span>
+                        <h3>تصميم استيكر مميز</h3>
+                    </div>
+
+                    <span class="arrow">↗</span>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta" id="contact">
+
+        <div class="cta-content">
+
+            <span>LET'S WORK TOGETHER</span>
+
+            <h2>
+                لديك مشروع وتحتاج إلى تصميم؟
+            </h2>
+
+            <p>
+                تواصل معي لتنفيذ تصميم رول أب أو استيكر
+                يناسب علامتك التجارية.
+            </p>
+
+            <a href="mailto:your@email.com" class="primary-btn">
+                تواصل معي
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <p>
+            © 2026 Ehab Design — جميع الحقوق محفوظة
+        </p>
+
+    </footer>
+
+
+    <!-- ================= IMAGE MODAL ================= -->
+    <div class="modal" id="imageModal">
+
+        <button class="close-modal" onclick="closeImage()">
+            ×
+        </button>
+
+        <img id="modalImage" src="" alt="عرض التصميم">
+
+    </div>
+
+
+    <!-- JavaScript -->
+    <script src="portfolio.js"></script>
+
+</body>
+</html>
