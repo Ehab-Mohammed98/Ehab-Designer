@@ -1,0 +1,864 @@
+أكيد. الكود عندك جيد، لكن فيه بعض المشاكل التي تؤثر على التناسق، أهمها **مسار صورة MC Design مكتوب `image/` بدل `images/`**، وتكرار المشروع، وأفضل جعل معرض الأعمال Grid متجاوب مع الجوال، مع بطاقات أنيقة وتأثير Hover.
+
+استبدل ملف **HTML** بهذا الإصدار، ثم سأعطيك CSS جاهزًا له:
+
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ehab Design | Portfolio</title>
+
+    <script src="https://kit.fontawesome.com/62edd5cf92.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="Css/styles.css">
+    <link rel="stylesheet" href="Css/STYLE2.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+<header>
+    <a href="#" class="logo">Ehab Design</a>
+
+    <nav class="navigation">
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="services">
+
+    <div class="hero-content">
+        <span>Graphic & Web Designer</span>
+
+        <h1>
+            Creative Design<br>
+            <strong>That Makes a Difference</strong>
+        </h1>
+
+        <p>
+            We create modern visual identities, professional websites,
+            business cards, stamps, invoices, and creative designs.
+        </p>
+
+        <a href="#projects" class="hero-btn">
+            View My Projects
+        </a>
+    </div>
+
+</section>
+
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects" id="projects">
+
+    <div class="section-title">
+        <span>My Portfolio</span>
+        <h2>Recent Projects</h2>
+        <p>Some of my latest design projects</p>
+    </div>
+
+
+    <div class="gallery">
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/رياض للاستشارات القانونية .png"
+                     alt="رياض للاستشارات القانونية">
+            </div>
+            <div class="project-info">
+                <h3>رياض للاستشارات القانونية</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/ساق كوفي.png"
+                     alt="SAV Coffee">
+            </div>
+            <div class="project-info">
+                <h3>SAV Coffee</h3>
+                <p>Brand Identity</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/شركة سبعة للمقاولات .png"
+                     alt="شركة سبعة للمقاولات">
+            </div>
+            <div class="project-info">
+                <h3>شركة سبعة للمقاولات</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/صالون الجميلات .png"
+                     alt="صالون الجميلات">
+            </div>
+            <div class="project-info">
+                <h3>صالون الجميلات</h3>
+                <p>Brand Identity</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/مكتبة ليل لادوات المكتبية .png"
+                     alt="مكتبة ليل للأدوات المكتبية">
+            </div>
+            <div class="project-info">
+                <h3>مكتبة ليل للأدوات المكتبية</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/صالون الولد للحلاقة .png"
+                     alt="صالون الولد للحلاقة">
+            </div>
+            <div class="project-info">
+                <h3>صالون الولد للحلاقة</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/Alex Music.png"
+                     alt="Alex Music">
+            </div>
+            <div class="project-info">
+                <h3>Alex Music</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/Blue Lotus.png"
+                     alt="محلات الوردة الزرقاء">
+            </div>
+            <div class="project-info">
+                <h3>محلات الوردة الزرقاء</h3>
+                <p>Brand Identity</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/Infinity Techonlogy.png"
+                     alt="Infinity Technology">
+            </div>
+            <div class="project-info">
+                <h3>Infinity Technology</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/MC Design.png"
+                     alt="MC Design">
+            </div>
+            <div class="project-info">
+                <h3>MC Design</h3>
+                <p>Brand Identity</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/Nova Electronics.png"
+                     alt="Nova Electronics">
+            </div>
+            <div class="project-info">
+                <h3>Nova Electronics</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/prevalent technology.png"
+                     alt="Prevalent Technology">
+            </div>
+            <div class="project-info">
+                <h3>Prevalent Technology</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/الدرة للحوم .png"
+                     alt="محلات الدرة للحوم">
+            </div>
+            <div class="project-info">
+                <h3>محلات الدرة للحوم</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+
+        <div class="project-card">
+            <div class="project-image">
+                <img src="images/logo/مستشفي هاشم .png"
+                     alt="مستشفى هاشم التخصصي">
+            </div>
+            <div class="project-info">
+                <h3>مستشفى هاشم التخصصي</h3>
+                <p>Logo Design</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+<section class="contact" id="contact">
+
+    <div class="section-title">
+        <span>Get In Touch</span>
+        <h2>Let's Work Together</h2>
+        <p>Have a project in mind? Let's create something amazing.</p>
+    </div>
+
+
+    <div class="contact-content">
+
+        <!-- PHONE -->
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+            </div>
+
+            <div>
+                <h3>Phone</h3>
+
+                <a href="https://wa.me/+966569060751">
+                    +966 56 906 0751
+                </a>
+
+                <a href="https://wa.me/+971568825301">
+                    +971 56 882 5301
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="contact-card">
+
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+
+            <div>
+                <h3>Email</h3>
+
+                <a href="mailto:eabuleyaman@gmail.com">
+                    eabuleyaman@gmail.com
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer>
+
+    <p>
+        Copyright © 2026
+        <span>Ehab Abuelyaman</span>
+    </p>
+
+    <div class="social-icons">
+
+        <a href="https://www.linkedin.com/in/ehab-abu-elyaman-838b85245">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a href="https://x.com/EhabMohamed85">
+            <i class="fab fa-x-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/ehabdesigner98">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.facebook.com/share/15nZFbB8hb/">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+</body>
+</html>
+```
+
+### CSS الجديد
+
+ضع هذا في `STYLE2.css`:
+
+```css
+/* =========================
+   GOOGLE FONT
+========================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap');
+
+
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', 'Cairo', sans-serif;
+    background: #f7f7f9;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #eee;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 800;
+    color: #111;
+    letter-spacing: -1px;
+}
+
+.navigation {
+    display: flex;
+    gap: 35px;
+}
+
+.navigation a {
+    color: #555;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    color: #000;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 100px 20px;
+
+    background:
+        radial-gradient(circle at top left, #e8e8ee, transparent 40%),
+        radial-gradient(circle at bottom right, #dedee5, transparent 40%),
+        #f7f7f9;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content span {
+    display: inline-block;
+
+    padding: 8px 18px;
+
+    margin-bottom: 25px;
+
+    border-radius: 30px;
+
+    background: #fff;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #666;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 75px);
+    line-height: 1.1;
+
+    font-weight: 800;
+
+    color: #111;
+}
+
+.hero h1 strong {
+    color: #777;
+}
+
+.hero p {
+    max-width: 650px;
+
+    margin: 25px auto 35px;
+
+    color: #666;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    padding: 14px 30px;
+
+    background: #111;
+    color: white;
+
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
+}
+
+
+/* =========================
+   SECTION TITLE
+========================= */
+
+.section-title {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-title span {
+    font-size: 13px;
+    font-weight: 700;
+
+    color: #777;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.section-title h2 {
+    margin: 10px 0;
+
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.section-title p {
+    color: #777;
+    font-size: 15px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+.projects {
+    padding: 100px 8%;
+}
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    background: #fff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    border: 1px solid #eee;
+
+    transition: 0.4s;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 20px 45px rgba(0,0,0,0.10);
+}
+
+.project-image {
+    height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 30px;
+
+    background: #f5f5f7;
+
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    transition: 0.5s;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.07);
+}
+
+.project-info {
+    padding: 20px;
+    text-align: right;
+}
+
+.project-info h3 {
+    font-family: 'Cairo', sans-serif;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    margin-bottom: 5px;
+}
+
+.project-info p {
+    color: #999;
+    font-size: 12px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact {
+    padding: 100px 8%;
+
+    background: #111;
+    color: #fff;
+}
+
+.contact .section-title span {
+    color: #aaa;
+}
+
+.contact .section-title h2 {
+    color: #fff;
+}
+
+.contact .section-title p {
+    color: #999;
+}
+
+.contact-content {
+    max-width: 850px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+}
+
+.contact-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 30px;
+
+    border: 1px solid #292929;
+
+    border-radius: 16px;
+
+    background: #181818;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #444;
+}
+
+.contact-icon {
+    width: 55px;
+    height: 55px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff;
+    color: #111;
+
+    font-size: 20px;
+}
+
+.contact-card h3 {
+    margin-bottom: 8px;
+}
+
+.contact-card a {
+    display: block;
+
+    color: #aaa;
+
+    font-size: 13px;
+
+    margin: 4px 0;
+
+    transition: 0.3s;
+}
+
+.contact-card a:hover {
+    color: #fff;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0a0a0a;
+
+    color: #777;
+
+    padding: 30px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+footer span {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.social-icons a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    color: #aaa;
+
+    border: 1px solid #292929;
+
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    border-color: #fff;
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    .navigation {
+        gap: 15px;
+    }
+
+    .navigation a {
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 80px 20px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .projects,
+    .contact {
+        padding: 70px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 32px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        height: 65px;
+    }
+
+    .navigation {
+        gap: 10px;
+    }
+
+    .navigation a {
+        font-size: 10px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+}
+```
+
+**أهم التعديلات التي عملتها:**
+
+* ترتيب المشاريع في **Grid احترافي ومتجاوب**.
+* إضافة **Hero Section** يعطي الموقع شكل Portfolio احترافي.
+* بطاقات المشاريع أصبحت موحدة الحجم.
+* إضافة **Hover Effects** ناعمة.
+* تحسين قسم التواصل.
+* تحسين الـ Footer.
+* دعم **العربي والإنجليزي**.
+* تحسين العرض على **الجوال والتابلت والكمبيوتر**.
+* تصحيح `navigtion` إلى `navigation`.
+* تصحيح `image/logo/MC Design.png` إلى `images/logo/MC Design.png`.
+* حذف تكرار **MC Design**.
+* إضافة `alt` للصور لتحسين SEO وإمكانية الوصول.
+* إضافة خطوط **Cairo + Poppins** لتناسق العربي والإنجليزي.
