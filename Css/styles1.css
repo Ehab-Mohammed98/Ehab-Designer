@@ -41,7 +41,9 @@
 
 
 /* النص */
-
+.about p{
+    color :#000000;
+}
 .about-content p {
     font-size: 18px;
     line-height: 2;
