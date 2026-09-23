@@ -16,6 +16,8 @@
     display: block;
 }
 
-.project-image {
-    height: 320px;
+   .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
