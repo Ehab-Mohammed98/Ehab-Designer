@@ -12,7 +12,6 @@
 /* الكرت */
 .project-card {
     width: 100%;
-    background: #fff;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
