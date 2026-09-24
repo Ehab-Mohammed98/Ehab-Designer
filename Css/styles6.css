@@ -3,12 +3,15 @@
     width: 90%;
     max-width: 1200px;
     margin: 40px auto;
-    
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-
+.projects-container h2{
+text: center;
+color:#777;
+font-size: 12px;
+}
 /* الكرت */
 .project-card {
     width: 100%;
@@ -39,6 +42,7 @@
     object-fit: contain;
     object-position: center;
 }
+
 
 /* معلومات المشروع */
 .project-info {
