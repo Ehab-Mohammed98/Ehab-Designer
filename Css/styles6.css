@@ -7,7 +7,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
-.projects-container h2{
+h2{
 text: center;
 color:#777;
 font-size: 12px;
