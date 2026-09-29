@@ -4,6 +4,11 @@
     background: #fff;
 }
 
+/*  تعريف نص  */
+.section about{
+font-size: 36px ;
+    margine-bottom:12px;
+}
 /* العنوان */
 .section-title {
     text-align: center;
