@@ -29,7 +29,7 @@
 
 
 /* =========================
-.title {
+.about .title {
     text-align: center;
 
     color: #0b2b4c;
@@ -41,7 +41,7 @@
     position: relative;
 }
 
-.title::after {
+.about .title::after {
     content: "";
 
     width: 60px;
