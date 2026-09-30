@@ -29,7 +29,36 @@
 
 
 /* =========================
-   Title
+.title {
+    text-align: center;
+
+    color: #0b2b4c;
+
+    font-size: 35px;
+
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.title::after {
+    content: "";
+
+    width: 60px;
+    height: 4px;
+
+    background: #f28c28;
+
+    border-radius: 10px;
+
+    position: absolute;
+
+    bottom: -15px;
+    left: 50%;
+
+    transform: translateX(-50%);
+}
+
 ========================= */
 
 .services-title {
