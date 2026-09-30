@@ -4,6 +4,15 @@
     background: #fff;
 }
 
+.rollup-section .title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 45px;
+    color: #222;
+    position: relative;
+}
+
+
 /*  تعريف نص  */
 .section about{
 font-size: 36px ;
