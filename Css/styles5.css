@@ -1,121 +1,306 @@
-/* Roll-Up Section */
-.rollup-section {
-    padding: 70px 8%;
-    background: #fff;
-}
+/* =========================
+   Services Section
+========================= */
 
-.rollup-section .title {
-    font-size: 36px;
-    font-weight: 700;
-    margin-bottom: 45px;
-    color: #222;
-    position: relative;
-}
-
-
-/*  تعريف نص  */
-.section about{
-font-size: 36px ;
-    margine-bottom:12px;
-}
-/* العنوان */
-.section-title {
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.section-title h2 {
-    color: #0b3155;
-    font-size: 36px;
-    margin-bottom: 12px;
-    font-weight: 700;
-}
-
-.section-title span {
-    display: block;
-    width: 60px;
-    height: 4px;
-    background: #f58220;
-    margin: 0 auto 15px;
-    border-radius: 5px;
-}
-
-.section-title p {
-    color: #666;
-    font-size: 17px;
-}
-
-/* Gallery */
-.rollup-gallery {
-    max-width: 1100px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
-}
-
-/* Card */
-.rollup-card {
-    background: #f8fafc;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    transition: 0.4s ease;
-}
-
-.rollup-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
-}
-
-/* الصورة */
-.rollup-card img {
+.services-section {
     width: 100%;
-    height: 430px;
-    object-fit: cover;
-    display: block;
-    transition: 0.4s ease;
+    padding: 30px 20px;
+    background: #090a0c;
+    box-sizing: border-box;
 }
 
-.rollup-card:hover img {
+
+/* =========================
+   Container
+========================= */
+
+.services-container {
+    max-width: 950px;
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows: auto auto;
+
+    gap: 24px;
+}
+
+
+/* =========================
+   Title
+========================= */
+
+.services-title {
+    grid-column: 1;
+    grid-row: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    min-height: 410px;
+
+    padding: 0 20px;
+
+    box-sizing: border-box;
+}
+
+
+.services-title h2 {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #07345c;
+
+    text-align: center;
+}
+
+
+.title-line {
+    width: 48px;
+    height: 3px;
+
+    background: #f7931e;
+
+    border-radius: 5px;
+
+    margin: 0 auto 25px;
+}
+
+
+/* =========================
+   Service Card
+========================= */
+
+.service-card {
+    background: #f4f6f8;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+
+/* Hover */
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+
+/* =========================
+   Image
+========================= */
+
+.service-image {
+    width: 100%;
+
+    height: 345px;
+
+    overflow: hidden;
+}
+
+
+.service-image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.service-card:hover .service-image img {
     transform: scale(1.03);
 }
 
-/* المعلومات */
-.rollup-info {
-    padding: 20px;
+
+/* =========================
+   Content
+========================= */
+
+.service-content {
+    min-height: 70px;
+
+    padding: 14px 15px;
+
     text-align: center;
+
+    background: #f4f6f8;
+
+    box-sizing: border-box;
 }
 
-.rollup-info h3 {
-    color: #0b3155;
-    font-size: 21px;
-    margin-bottom: 8px;
+
+.service-content h3 {
+    margin: 0 0 6px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 17px;
+
+    font-weight: 700;
+
+    color: #003b6f;
 }
 
-.rollup-info p {
-    color: #777;
-    font-size: 15px;
+
+.service-content p {
     margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 12px;
+
+    color: #777;
+
+    direction: rtl;
 }
 
-/* الجوال */
-@media (max-width: 768px) {
 
-    .rollup-section {
-        padding: 50px 5%;
+/* =========================
+   Card Positions
+========================= */
+
+/* First card */
+.service-card:nth-child(2) {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+/* Second card */
+.service-card:nth-child(3) {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+/* Third card */
+.service-card:nth-child(4) {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+
+/* =========================
+   Responsive - Tablet
+========================= */
+
+@media (max-width: 800px) {
+
+    .services-container {
+        max-width: 700px;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 18px;
     }
 
-    .section-title h2 {
-        font-size: 28px;
+    .services-title h2 {
+        font-size: 23px;
     }
 
-    .rollup-gallery {
+    .service-image {
+        height: 300px;
+    }
+
+}
+
+
+/* =========================
+   Responsive - Mobile
+========================= */
+
+@media (max-width: 600px) {
+
+    .services-section {
+        padding: 30px 15px;
+    }
+
+
+    .services-container {
+        display: grid;
+
         grid-template-columns: 1fr;
-        gap: 25px;
+
+        gap: 20px;
     }
 
-    .rollup-card img {
+
+    .services-title {
+        grid-column: 1;
+        grid-row: auto;
+
+        min-height: auto;
+
+        padding: 10px 0 25px;
+    }
+
+
+    .services-title h2 {
+        font-size: 25px;
+
+        margin-bottom: 25px;
+    }
+
+
+    .title-line {
+        margin: 0 auto;
+    }
+
+
+    .service-card:nth-child(2),
+    .service-card:nth-child(3),
+    .service-card:nth-child(4) {
+
+        grid-column: 1;
+        grid-row: auto;
+    }
+
+
+    .service-image {
         height: 400px;
     }
+
+
+    .service-content h3 {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================
+   Small Mobile
+========================= */
+
+@media (max-width: 400px) {
+
+    .service-image {
+        height: 350px;
+    }
+
+    .services-title h2 {
+        font-size: 22px;
+    }
+
 }
