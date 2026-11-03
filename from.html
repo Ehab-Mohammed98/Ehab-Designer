@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>طلب خدمة تصميم</title>
+  <link rel="stylesheet" href="Css/cheoos.css">
+</head>
+<body>
+
+<header class="header">
+  <h2>Creative Studio</h2>
+  <a href="#request">اطلب خدمتك</a>
+</header>
+
+<section class="hero">
+  <span>خدمات إبداعية واحترافية</span>
+  <h1>حوّل أفكارك إلى <strong>واقع إبداعي</strong></h1>
+  <p>اختر الخدمة المناسبة وأرسل تفاصيل مشروعك لنبدأ العمل.</p>
+</section>
+
+<main class="container" id="request">
+  <form id="requestForm">
+
+    <h2>طلب خدمة جديدة</h2>
+    <p class="subtitle">يرجى تعبئة البيانات التالية</p>
+
+    <label>اختر الخدمة</label>
+    <select id="service" required>
+      <option value="">-- اختر الخدمة --</option>
+      <option value="graphic">التصميم الجرافيكي</option>
+      <option value="web">تصميم وتطوير المواقع</option>
+    </select>
+
+    <div id="dynamicFields"></div>
+
+    <div class="field">
+      <label>الاسم الكامل</label>
+      <input type="text" id="name" placeholder="اسمك الكامل" required>
+    </div>
+
+    <div class="field">
+      <label>رقم الهاتف</label>
+      <input type="tel" id="phone" placeholder="05xxxxxxxx" required>
+    </div>
+
+    <div class="field">
+      <label>البريد الإلكتروني</label>
+      <input type="email" id="email" placeholder="example@email.com">
+    </div>
+
+    <div class="field">
+      <label>تفاصيل المشروع</label>
+      <textarea id="details" rows="4"
+        placeholder="اكتب تفاصيل المشروع..." required></textarea>
+    </div>
+
+    <div class="field">
+      <label>رابط الملفات المرجعية</label>
+      <input type="url" id="files"
+        placeholder="رابط Google Drive أو Dropbox">
+    </div>
+
+    <button type="submit">إرسال الطلب عبر WhatsApp</button>
+    <p id="message"></p>
+
+  </form>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
