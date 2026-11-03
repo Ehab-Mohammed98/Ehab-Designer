@@ -1,0 +1,137 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6fa;
+  color: #20243a;
+}
+
+.header {
+  background: #171b35;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  background: #6558e8;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.hero {
+  text-align: center;
+  padding: 65px 20px;
+}
+
+.hero span {
+  color: #6558e8;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero strong {
+  color: #6558e8;
+}
+
+.hero p {
+  color: #777;
+  line-height: 1.8;
+}
+
+.container {
+  max-width: 650px;
+  margin: 0 auto 60px;
+  padding: 20px;
+}
+
+form {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 35px #0000000d;
+}
+
+form h2 {
+  margin-top: 0;
+}
+
+.subtitle {
+  color: #888;
+  margin-bottom: 25px;
+}
+
+.field, .dynamic-field {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #6558e8;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  background: #6558e8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5144ce;
+}
+
+#message {
+  color: #c0392b;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 27px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .header {
+    padding: 15px;
+  }
+}
