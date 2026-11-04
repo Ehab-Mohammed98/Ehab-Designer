@@ -1,7 +1,7 @@
 
 // ضع رقم واتساب الخاص بك هنا
 // مثال: 9665XXXXXXXX
-const whatsappNumber = "9665XXXXXXXX";
+const whatsappNumber = "966569060751";
 
 const service = document.getElementById("service");
 const dynamicFields = document.getElementById("dynamicFields");
