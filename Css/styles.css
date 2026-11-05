@@ -17,12 +17,14 @@ body {
     transition: 0.3s;
 }
 
-html[dir="rtl"] body {
-    text-align: right;
-}
+
 
 html[dir="ltr"] body {
     text-align: left;
+}
+
+html[dir="rtl"] body {
+    text-align: right;
 }
 
 a {
